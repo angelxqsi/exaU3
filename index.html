@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Euro a Dólar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+    <h1 class="h1">Conversor de Euro a Dólar</h1>
+    <form id="conversionForm" class="form">
+        <label for="eurosInput">Cantidad de euros:</label>
+        <input type="number" id="eurosInput" step="0.01" min="0" required class="input">
+        <button id="convertButton" type="button" class="button">Convertir</button>
+    </form>
+    <div id="resultado" class="result"></div>
+
+    <h1 class="h1">Conversor de Dólar a Euro</h1>
+    <form id="dollarToEuroForm" class="form">
+        <label for="dollarsInput">Cantidad de dólares:</label>
+        <input type="number" id="dollarsInput" step="0.01" min="0" required class="input">
+        <button id="dollarConvertButton" type="button" class="button">Convertir a Euros</button>
+    </form>
+    <div id="dollarResultado" class="result"></div>
+
+    <h1 class="h1">Calificación según nota</h1>
+    <form id="calificacionForm" class="form">
+        <label for="inputNota">Ingresa la nota:</label>
+        <input type="number" id="inputNota" step="0.01" class="input">
+        <button id="calcularButton" type="button" class="button" onclick="calcularCalificacion()">Calcular</button>
+    </form>
+    <p id="resultadoCalificacion" class="result"></p>
+
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+</body>
+</html>
+
